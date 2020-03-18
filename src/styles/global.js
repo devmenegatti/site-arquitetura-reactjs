@@ -11,7 +11,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background: #FFF;
+    background: #ccc;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -20,9 +20,10 @@ export default createGlobalStyle`
   }
 
   #root {
+
     max-width: 1020px;
     margin: 0 auto;
-    padding: 0 20px 50px;
-    cursor: pointer;
+    padding: 0 20px 0px;
+    background: #fff;
   }
 `;
