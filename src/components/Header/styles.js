@@ -7,6 +7,7 @@ export const Container = styled.div`
   justify-content: space-between;
   height: 90px;
   border-bottom: 1px solid #ccc;
+  z-index: 1;
 
   img {
     max-height: 75px;
@@ -66,6 +67,7 @@ export const SubMenu = styled.li`
     display: flex;
     flex-direction: column;
     position: absolute;
+    z-index: 1;
     background: #fffc;
     visibility: hidden;
     border-radius: 5px;

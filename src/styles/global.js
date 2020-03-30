@@ -12,14 +12,13 @@ export default createGlobalStyle`
   }
 
   body, #root {
-    background: #ccc;
+    background: #fff;
     -webkit-font-smoothing: antialiased;
     height: 100%;
     cursor: default;
   }
 
   #root {
-    background: #fff;
     position: relative;
     min-height: 100vh;
     max-width: 1020px;

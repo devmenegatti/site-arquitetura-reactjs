@@ -4,6 +4,7 @@ import {
   FaInstagram,
   FaBehance,
   FaYoutube,
+  FaWhatsapp,
   FaCode
 } from "react-icons/fa";
 
@@ -25,6 +26,7 @@ export default function Footer() {
         <a href="http://www.instagram.com/" target='black' ><FaInstagram size={20} /></a>
         <a href="http://www.behance.net/" target='black' ><FaBehance size={20} /></a>
         <a href="http://www.youtube.com/" target='black' ><FaYoutube size={20} /></a>
+        <a href="http://www.whatsapp.com/" target='black' ><FaWhatsapp size={20} /></a>
       </SocialMedia>
     </Container>
   );
