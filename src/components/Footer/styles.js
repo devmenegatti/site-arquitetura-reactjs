@@ -2,11 +2,16 @@ import styled from 'styled-components';
 
 export const Container = styled.footer`
   display: flex;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  align-items: center;
   justify-content: space-between;
-  border-top: 1px solid #ccc;
   margin-top: 10px;
-  padding: 10px;
-
+  padding: 5px 20px;
+  border-top: 1px solid #ccc;
+  max-width: 980px;
+  background: #fff;
 `;
 
 export const SocialMedia = styled.div`

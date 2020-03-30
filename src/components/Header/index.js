@@ -20,21 +20,20 @@ export default function Header() {
           <SubMenu>
             <span># PROJETOS | ARQUITETONICOS</span>
             <ul>
-              <li><RedirectPage to={`/project/1`}># ARQUITETONICO 01</RedirectPage></li>
-              <li><RedirectPage to={`/project/2`}># ARQUITETONICO 02</RedirectPage></li>
-              <li><RedirectPage to={`/project/3`}># ARQUITETONICO 03</RedirectPage></li>
-              <li><RedirectPage to={`/project/4`}># ARQUITETONICO 04</RedirectPage></li>
-              <li><RedirectPage to={`/project/5`}># ARQUITETONICO 05</RedirectPage></li>
+              <li><RedirectPage to={`/project/fachadas`}># FACHADAS</RedirectPage></li>
+              <li><RedirectPage to={`/project/comerciais`}># PROJETOS COMERCIAIS</RedirectPage></li>
             </ul>
           </SubMenu>
           <SubMenu>
             <span># PROJETOS | INTERIORES</span>
             <ul>
-              <li><RedirectPage to={`/project/6`}># INTERIOR 01</RedirectPage></li>
-              <li><RedirectPage to={`/project/7`}># INTERIOR 02</RedirectPage></li>
-              <li><RedirectPage to={`/project/8`}># INTERIOR 03</RedirectPage></li>
-              <li><RedirectPage to={`/project/9`}># INTERIOR 04</RedirectPage></li>
-              <li><RedirectPage to={`/project/10`}># INTERIOR 05</RedirectPage></li>
+              <li><RedirectPage to={`/project/gourmet`}># ÁREA GOURMET</RedirectPage></li>
+              <li><RedirectPage to={`/project/banheiro`}># BANHEIRO</RedirectPage></li>
+              <li><RedirectPage to={`/project/cozinha`}># COZINHA</RedirectPage></li>
+              <li><RedirectPage to={`/project/lavabo`}># LAVABO</RedirectPage></li>
+              <li><RedirectPage to={`/project/quarto`}># QUARTO</RedirectPage></li>
+              <li><RedirectPage to={`/project/estar`}># SALA ESTAR</RedirectPage></li>
+              <li><RedirectPage to={`/project/jantar`}># SALA JANTAR</RedirectPage></li>
             </ul>
           </SubMenu>
           <li><RedirectPage to="/contact"># CONTATO</RedirectPage></li>

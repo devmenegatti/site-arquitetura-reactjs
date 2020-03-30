@@ -8,22 +8,26 @@ export default createGlobalStyle`
     padding: 0;
     outline: 0;
     box-sizing: border-box;
+
   }
 
-  body {
+  body, #root {
     background: #ccc;
     -webkit-font-smoothing: antialiased;
-  }
-
-  body, input, button {
-    font: 14px Roboto, sans-serif;
+    height: 100%;
+    cursor: default;
   }
 
   #root {
-
+    background: #fff;
+    position: relative;
+    min-height: 100vh;
     max-width: 1020px;
     margin: 0 auto;
-    padding: 0 20px 0px;
-    background: #fff;
+    padding: 0 20px 20px 20px;
+  }
+
+  body, input, button {
+    font: 11px Roboto, sans-serif;
   }
 `;
