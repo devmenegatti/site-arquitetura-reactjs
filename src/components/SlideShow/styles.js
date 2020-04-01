@@ -23,8 +23,7 @@ export const Container = styled.div`
   }
 
   .image-gallery-image {
-    width: ${px2vh(980)};
-    height: ${px2vh(490)};
+    height: ${px2rem(600)};
   }
 
 

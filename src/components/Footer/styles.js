@@ -34,26 +34,29 @@ export const SocialMedia = styled.div`
   }
 `;
 
-export const PoweredBy = styled.a`
+export const PoweredBy = styled.div`
   display: flex;
-  text-decoration: none;
   align-items: center;
+  justify-content: flex-start;
+  width: ${px2vh(20)};
   color: #666;
-  font-weight: bold;
-  font-size: ${px2rem(9)};
-  white-space: nowrap;
 
   &:hover {
+      width: ${px2vh(170)};
       color: #000;
-      span {
-        visibility: visible;
-        opacity: 1;
+      a {
+        display: flex;
       }
   }
 
-  span {
-    opacity: 0;
-    visibility: hidden;
+  a {
+    display:none;
+    color: #666;
+    font-size: ${px2rem(9)};
+    margin-left: ${px2rem(3)};
+    font-weight: bold;
+    white-space: nowrap;
+    text-decoration: none;
     transition:visibility 0.3s linear,opacity 0.3s linear;
   }
 

@@ -18,9 +18,9 @@ export default function Footer() {
   return (
     <Container>
       <div>
-        <PoweredBy href="http://github.com/devmenegatti/" target="blank">
+        <PoweredBy>
           <FaCode size={20} />
-          <span>Powered by Marlon Menegatti</span>
+          <a href="http://marlondev.me" target="blank">Powered by Marlon Menegatti</a>
         </PoweredBy>
         <SocialMedia>
           <a href="http://www.facebook.com/" target='black' ><FaFacebookF size={20} /></a>
