@@ -2,21 +2,32 @@ import styled from 'styled-components';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 
+import { px2rem, px2vh } from "../../utils/convertSize";
+
 export const Container = styled.div`
   .image-gallery-description {
-    top:10px;
+    top:${px2rem(10)};
     bottom: auto;
-    font-size: 14px;
+    font-size: ${px2rem(11)};
     visibility: hidden;
-    padding: 5px;
+    padding: ${px2rem(5)};
     text-align: start;
     width: 50%;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    line-height: 20px !important;
+    background-color: #fffa;
+    color: #000;
+    border-top-right-radius: ${px2rem(10)};
+    border-bottom-right-radius: ${px2rem(10)};
+    line-height: ${px2rem(15)} !important;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     transition: all linear .1s;
   }
+
+  .image-gallery-image {
+    width: ${px2vh(980)};
+    height: ${px2vh(490)};
+  }
+
+
 
   div:hover {
     .image-gallery-description {
@@ -26,5 +37,4 @@ export const Container = styled.div`
 `;
 
 export const Slide = styled(ImageGallery)`
-
 `;

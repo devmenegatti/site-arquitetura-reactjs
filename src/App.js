@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
+  document.addEventListener('contextmenu', event => event.preventDefault());
   return (
     <div className="App">
       <BrowserRouter>

@@ -1,17 +1,24 @@
 import styled from 'styled-components';
+import { px2rem, px2vh} from "../../utils/convertSize";
+
 
 export const Container = styled.footer`
-  display: flex;
   position: absolute;
-  width: 100%;
   bottom: 0;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 10px;
-  padding: 5px 20px;
-  border-top: 1px solid #ccc;
-  max-width: 980px;
+  left: 0;
+  width: 100%;
+  margin-top: ${px2vh(10)};
+  padding: ${px2vh(5)} ${px2vh(20)};
+  max-width: ${px2rem(980)};
   background: #fff;
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding: ${px2vh(5)};
+  }
 `;
 
 export const SocialMedia = styled.div`
@@ -19,7 +26,7 @@ export const SocialMedia = styled.div`
   align-items: center;
   a {
     color: #666;
-    padding: 6px;
+    padding: ${px2rem(5)};
 
     &:hover {
       color: #000;
@@ -33,7 +40,7 @@ export const PoweredBy = styled.a`
   align-items: center;
   color: #666;
   font-weight: bold;
-  font-size: 12px;
+  font-size: ${px2rem(9)};
   white-space: nowrap;
 
   &:hover {
@@ -45,7 +52,6 @@ export const PoweredBy = styled.a`
   }
 
   span {
-    margin-left: 5px;
     opacity: 0;
     visibility: hidden;
     transition:visibility 0.3s linear,opacity 0.3s linear;

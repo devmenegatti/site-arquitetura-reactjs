@@ -12,7 +12,9 @@ import logo from '../../assets/images/logo-black.png';
 export default function Header() {
   return (
     <Container>
-      <img src={logo} alt="logo"/>
+      <div>
+        <img src={logo} alt="logo"/>
+      </div>
       <NavigationBar>
         <ul>
           <li><RedirectPage to="/"># HOME</RedirectPage></li>

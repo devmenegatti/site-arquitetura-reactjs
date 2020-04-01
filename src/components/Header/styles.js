@@ -1,31 +1,38 @@
 import styled from 'styled-components';
 import { Link } from "react-router-dom";
 
+import { px2rem, px2vh} from "../../utils/convertSize";
+
 export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 90px;
+  height: ${px2vh(100)};
   border-bottom: 1px solid #ccc;
-  z-index: 1;
 
-  img {
-    max-height: 75px;
+  > div {
+    display: flex;
+    max-width: 35%;
+    > img {
+      max-height: 100%;
+      max-width: 100%;
+    }
   }
 `;
 
 export const NavigationBar = styled.nav`
-  flex: 1;
+  flex-grow: 2;
   ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    margin-left: 30px;
+    margin-left: ${px2vh(30)};
 
     li {
       list-style: none;
-      padding: 5px 15px;
+      padding: ${px2vh(6)} ${px2vh(15)};
       font-family: 'Courier New', Courier, monospace;
+      user-select: none;
     }
   }
 `;
@@ -43,9 +50,6 @@ export const RedirectPage = styled(Link)`
 `;
 
 export const SubMenu = styled.li`
-
-
-
   &:hover {
     ul {
       visibility: visible;
@@ -65,12 +69,13 @@ export const SubMenu = styled.li`
 
   ul {
     display: flex;
+    padding-top: ${px2rem(10)};
     flex-direction: column;
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     background: #fffc;
     visibility: hidden;
-    border-radius: 5px;
+    border-radius: ${px2rem(5)};
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   }
 `;
