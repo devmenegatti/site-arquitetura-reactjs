@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 
-import { px2rem, px2vh } from "../../utils/convertSize";
+import { px2rem } from "../../utils/convertSize";
 
 export const Container = styled.div`
   .image-gallery-description {

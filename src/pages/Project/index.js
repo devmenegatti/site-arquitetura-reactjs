@@ -14,15 +14,16 @@ export default function Project() {
 
 
   useEffect(()=>{
+    async function loadImages() {
+      await api.get(`/project?category=${id}`).then( response => {
+        setImages(response.data);
+      }).catch(error => {
+      });
+    }
     loadImages();
   },[id]);
 
-  async function loadImages() {
-    await api.get(`/project\?category=${id}`).then( response => {
-      setImages(response.data);
-    }).catch(error => {
-    });
-  }
+
   return (
     <Container>
       {(images.length) ? <SlideShow images={images} /> : <span>Não foi possivel carregar os projetos disponiveis</span>}

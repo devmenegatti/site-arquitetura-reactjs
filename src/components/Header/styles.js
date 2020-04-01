@@ -13,8 +13,9 @@ export const Container = styled.div`
   > div {
     display: flex;
     max-width: 35%;
+    max-height: ${px2vh(100)};
     > img {
-      max-height: 100%;
+      max-height: ${px2vh(100)};
       max-width: 100%;
     }
   }
