@@ -19,7 +19,7 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     height: 100%;
     cursor: default;
-    font-size: ${px2rem(10)};
+    font-size: ${px2rem(11.5)};
   }
 
   #root {
@@ -31,6 +31,6 @@ export default createGlobalStyle`
   }
 
   body, input, button {
-    font: 11px Roboto, sans-serif;
+    font-family: 'Courier New', Helvetica, sans-serif;
   }
 `;
