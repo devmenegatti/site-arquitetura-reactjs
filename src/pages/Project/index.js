@@ -21,13 +21,11 @@ export default function Project() {
     await api.get(`/project\?category=${id}`).then( response => {
       setImages(response.data);
     }).catch(error => {
-      alert(error);
     });
   }
   return (
     <Container>
-      {console.info(images)}
-      {(images.length) ? <SlideShow images={images} /> : <span>Não há projetos disponiveis</span>}
+      {(images.length) ? <SlideShow images={images} /> : <span>Não foi possivel carregar os projetos disponiveis</span>}
     </Container>
   );
 }

@@ -15,12 +15,11 @@ export default function Home() {
     await api.get('/home').then((response) => {
       setImages(response.data);
     }).catch((error) => {
-      alert(error);
     });
   }
   return (
       <Container>
-        <SlideShow images={images} />
+        {(images.length) ? <SlideShow images={images} /> : <span>Não foi possivel carregar os projetos disponiveis</span>}
       </Container>
   );
 }
